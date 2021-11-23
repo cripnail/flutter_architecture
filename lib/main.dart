@@ -12,5 +12,5 @@ import 'package:module_business/module_business.dart';
 
 void main() {
   initializeBlocs();
-  runApp(MyApp());
+  runApp(const MyApp());
 }

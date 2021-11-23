@@ -40,14 +40,13 @@ dependencies:
     path: ../module_data
   module_model:
     path: ../module_model
+  freezed: ^1.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   injectable_generator: ^1.5.2
   build_runner: ^2.1.5
-#  build_runner:
-#    freezed: ^1.0.0
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

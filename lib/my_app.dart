@@ -17,7 +17,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     _mainBloc = GetIt.I.get<MainBloc>();
-    // _mainBloc.add(MainBlocEvent.init());
+    _mainBloc.add(const MainBlocEvent.init());
   }
 
   @override
@@ -60,7 +60,7 @@ class MyHomePage extends StatelessWidget {
                     ),
                 loaded: (state) => Scaffold(
                       appBar: AppBar(
-                        title: Text('${state.userData.name}'),
+                        title: const Text('Demo'),
                       ),
                       body: Center(
                         child: Text('Initializing',
