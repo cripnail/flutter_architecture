@@ -35,6 +35,8 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   provider: ^6.0.1
+  get_it: ^7.2.0
+  injectable: ^1.5.0
   freezed: ^1.0.0
   module_model:
     path: packages/module_model
@@ -44,6 +46,10 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+#    module_codegen:
+#      path: ../module_codegen
+#    module_analyzer:
+#      path: ../module_analyzer
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -53,6 +59,8 @@ dev_dependencies:
   flutter_lints: ^1.0.0
   build_runner: ^2.1.5
   injectable_generator: ^1.5.2
+  module_analyzer:
+    path: ./packages/module_analyzer
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
