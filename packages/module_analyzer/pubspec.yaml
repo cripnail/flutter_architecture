@@ -1,4 +1,4 @@
-name: clean_arch
+name: module_analyzer
 description: A new Flutter project.
 
 # The following line prevents the package from being accidentally published to
@@ -34,31 +34,22 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  module_business:
+    path: ../module_business
+  module_model:
+    path: ../module_model
   provider: ^6.0.1
   get_it: ^7.2.0
-  injectable: ^1.5.0
-  freezed: ^1.0.0
-  module_model:
-    path: packages/module_model
-  module_business:
-    path: packages/module_business
+  pedantic: ^1.11.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-#    module_codegen:q
-#      path: ../module_codegen
-  # The "flutter_lints" package below contains a set of recommended lints to
-  # encourage good coding practices. The lint set provided by the package is
-  # activated in the `analysis_options.yaml` file located at the root of your
-  # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
   flutter_lints: ^1.0.0
-  build_runner: ^2.1.5
-  injectable_generator: ^1.5.2
-  module_analyzer:
-    path: packages/module_analyzer
-
+#  module_codegen:
+#    path: ../module_codegen
+#  module_analyzer:
+#    path: ../module_analyzer
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
