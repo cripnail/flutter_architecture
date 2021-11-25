@@ -60,7 +60,7 @@ dev_dependencies:
   build_runner: ^2.1.5
   injectable_generator: ^1.5.2
   module_analyzer:
-    path: ./packages/module_analyzer
+    path: packages/module_analyzer
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
