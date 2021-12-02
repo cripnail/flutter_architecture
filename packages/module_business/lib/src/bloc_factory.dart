@@ -16,6 +16,7 @@
 import 'package:get_it/get_it.dart';
 import 'package:injectable/injectable.dart';
 import 'package:module_data/module_data.dart';
+import 'package:module_model/module_model.dart';
 
 @InjectableInit()
 void initializeBlocs() {
