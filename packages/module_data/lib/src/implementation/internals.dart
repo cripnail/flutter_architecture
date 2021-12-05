@@ -12,7 +12,7 @@
 import 'package:module_data/module_data.dart';
 import 'package:module_model/module_model.dart';
 import 'package:injectable/injectable.dart';
-import '../api/services.dart';
+import 'package:module_data/src/api/services.dart';
 
 @named
 @LazySingleton(as: UserService)
