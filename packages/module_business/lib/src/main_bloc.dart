@@ -41,7 +41,7 @@ class MainBloc {
 
   MainBloc(
       // required this.healthService
-      {@Named.from(DummyService) required this.userService}) {
+      {@Named.from(UserService) required this.userService}) {
     _eventsController.stream.listen((event) {
       event.map<void>(
           init: (_) async {
