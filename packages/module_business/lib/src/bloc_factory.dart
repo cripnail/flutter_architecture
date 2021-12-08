@@ -20,6 +20,6 @@ import 'package:module_model/module_model.dart';
 
 @InjectableInit()
 void initializeBlocs() {
-  initializeServices();
-  $initGetIt(GetIt.I);
+  // initializeServices();
+  // $initGetIt(GetIt.I);
 }

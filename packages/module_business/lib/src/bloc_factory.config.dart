@@ -15,7 +15,6 @@ import 'main_bloc.dart' as _i3; // ignore_for_file: unnecessary_lambdas
 _i1.GetIt $initGetIt(_i1.GetIt get,
     {String? environment, _i2.EnvironmentFilter? environmentFilter}) {
   final gh = _i2.GetItHelper(get, environment, environmentFilter);
-  gh.lazySingleton<_i3.MainBloc>(() => _i3.MainBloc(
-      userService: get<_i4.UserService>(instanceName: 'DummyService')));
+  gh.singleton<_i3.MainBloc>(_i3.MainBloc(userService: get<_i4.UserService>()));
   return get;
 }

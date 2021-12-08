@@ -14,8 +14,8 @@ import 'package:module_model/module_model.dart';
 import 'package:injectable/injectable.dart';
 import 'package:module_data/src/api/services.dart';
 
-@named
-@LazySingleton(as: UserService)
+// @named
+@Singleton(as: UserService)
 class DummyService implements UserService {
   @override
   Future<UserData> getDefaultUser() async {

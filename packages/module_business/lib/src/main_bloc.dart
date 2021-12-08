@@ -29,7 +29,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'main_bloc.freezed.dart';
 
 
-@lazySingleton
+@singleton
 // @injectable
 class MainBloc {
   final UserService userService;
@@ -41,7 +41,9 @@ class MainBloc {
 
   MainBloc(
       // required this.healthService
-      {@Named.from(UserService) required this.userService}) {
+      {
+        // @Named.from(UserService)
+      required this.userService}) {
     _eventsController.stream.listen((event) {
       event.map<void>(
           init: (_) async {
