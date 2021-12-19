@@ -62,10 +62,15 @@ class MyHomePage extends StatelessWidget {
                       appBar: AppBar(
                         title: const Text('Demo'),
                       ),
-                      body: Center(
-                        child: Text('Initializing',
-                            style: Theme.of(context).textTheme.headline4),
-                      ),
+                      body: Column(children: [
+                        Text(
+                          state.userData.name,
+                          textAlign: TextAlign.center,
+                        ),
+                      ],
+                          // 'Initializing',
+                          // style: Theme.of(context).textTheme.headline4),
+                          ),
                       floatingActionButton: FloatingActionButton(
                         onPressed: () => context.read<MainBloc>().add(
                             MainBlocEvent.setUser(
