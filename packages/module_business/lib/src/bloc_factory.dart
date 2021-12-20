@@ -18,8 +18,10 @@ import 'package:injectable/injectable.dart';
 import 'package:module_data/module_data.dart';
 import 'package:module_model/module_model.dart';
 
+import '../module_business.dart';
+
 @InjectableInit()
 void initializeBlocs() {
   // initializeServices();
-  // $initGetIt(GetIt.I);
+  $initGetIt(GetIt.I);
 }
