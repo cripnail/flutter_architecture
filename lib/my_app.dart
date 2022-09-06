@@ -63,7 +63,7 @@ class MyHomePage extends StatelessWidget {
                         title: const Text('Demo'),
                       ),
                       body: Center(
-                        child: Text('Initializing',
+                        child: Text(state.userData.name,
                             style: Theme.of(context).textTheme.headline4),
                       ),
                       floatingActionButton: FloatingActionButton(
