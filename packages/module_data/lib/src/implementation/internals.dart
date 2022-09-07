@@ -1,13 +1,3 @@
-// import 'package:get_it/get_it.dart';
-// import 'package:injectable/injectable.dart';
-// import '../api/services.dart';
-//
-// @LazySingleton(as: HealthService)
-// abstract class DummyService implements HealthService {
-//   bool getHealth() {
-//     return true;
-//   }
-// }
 
 import 'package:module_data/module_data.dart';
 import 'package:module_model/module_model.dart';

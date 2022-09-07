@@ -1,25 +1,3 @@
-// import 'dart:async';
-// import 'package:module_data/module_data.dart';
-// import 'package:injectable/injectable.dart';
-// import 'dart:async';
-//
-// @Injectable()
-// class MainBloc {
-//   final HealthService healthService;
-//   final StreamController<int> _eventsController = StreamController();
-//
-//   MainBloc({
-//     required this.healthService
-// });
-//
-//   void add(int event) {
-//     if (_eventsController.isClosed) return;
-//     _eventsController.add(event);
-//   }
-//   void dispose() {
-//     _eventsController.close();
-//   }
-// }
 import 'dart:async';
 import 'package:injectable/injectable.dart';
 import 'package:module_data/module_data.dart';
@@ -37,10 +15,7 @@ class MainBloc {
 
   Stream<MainBlocState> get state => _stateController.stream;
 
-  MainBloc(
-      {
-      // required this.healthService
-      required this.userService}) {
+  MainBloc({required this.userService}) {
     _eventsController.stream.listen((event) {
       event.map<void>(
           init: (_) async {
